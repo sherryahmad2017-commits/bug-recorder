@@ -1,0 +1,4 @@
+# Shell scripts must stay LF regardless of the checkout platform's autocrlf
+# setting — a CRLF entrypoint breaks with a cryptic "no such file or
+# directory" inside the Linux container that runs it.
+*.sh text eol=lf
